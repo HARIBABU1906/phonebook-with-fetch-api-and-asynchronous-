@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Simple Async Phonebook</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h2>Simple Async Phonebook App</h2>
+
+<div class="box">
+    <input type="hidden" id="contactId">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="phone" placeholder="Enter Phone">
+    <button onclick="saveContact()">Save</button>
+    <button onclick="clearForm()">Clear</button>
+</div>
+
+<input type="text" id="search" placeholder="Search..." onkeyup="searchContacts()">
+
+<h3>Contact List</h3>
+<div id="list">Loading...</div>
+
+<script src="walk.js"></script>
+
+</body>
+</html>
